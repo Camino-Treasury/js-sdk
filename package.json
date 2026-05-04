@@ -1,0 +1,54 @@
+{
+  "name": "camino-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the C0 stablecoin and Camino Treasury smart contracts",
+  "license": "MIT",
+  "repository": "github:camino-treasury/camino-sdk",
+  "homepage": "https://github.com/camino-treasury/camino-sdk#readme",
+  "bugs": "https://github.com/camino-treasury/camino-sdk/issues",
+  "keywords": [
+    "camino",
+    "c0",
+    "treasury",
+    "stablecoin",
+    "viem",
+    "ethereum",
+    "sdk"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "abis",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && node build.js && tsc --project tsconfig.production.json --emitDeclarationOnly --outDir dist",
+    "clean": "rm -rf dist && rm -rf node_modules",
+    "typecheck": "tsc --noEmit",
+    "generate": "wagmi generate",
+    "prepublishOnly": "pnpm run generate && pnpm run build"
+  },
+  "peerDependencies": {
+    "@wagmi/core": ">=2",
+    "viem": ">=2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@wagmi/cli": "^2.10.0",
+    "@wagmi/core": "^3.4.8",
+    "esbuild": "^0.28.0",
+    "tsc-alias": "^1.8.17",
+    "typescript": "5.3.2",
+    "viem": "^2.48.8"
+  }
+}
