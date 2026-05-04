@@ -1,6 +1,6 @@
 {
   "name": "camino-sdk",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "TypeScript SDK for the C0 stablecoin and Camino Treasury smart contracts",
   "license": "MIT",
   "repository": "github:camino-treasury/camino-sdk",
@@ -39,7 +39,7 @@
     "prepublishOnly": "pnpm run generate && pnpm run build"
   },
   "peerDependencies": {
-    "@wagmi/core": ">=2",
+    "@wagmi/core": ">=3",
     "viem": ">=2"
   },
   "devDependencies": {
