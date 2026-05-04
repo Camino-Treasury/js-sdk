@@ -4,8 +4,8 @@
   "description": "TypeScript SDK for the C0 stablecoin and Camino Treasury smart contracts",
   "license": "MIT",
   "repository": "github:camino-treasury/camino-sdk",
-  "homepage": "https://github.com/camino-treasury/camino-sdk#readme",
-  "bugs": "https://github.com/camino-treasury/camino-sdk/issues",
+  "homepage": "https://github.com/camino-treasury/js-sdk#readme",
+  "bugs": "https://github.com/camino-treasury/js-sdk/issues",
   "keywords": [
     "camino",
     "c0",
