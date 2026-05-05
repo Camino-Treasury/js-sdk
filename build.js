@@ -33,18 +33,18 @@ try {
 
   // 2. Create a clean package.json for the 'dist' directory
   const distPackageJson = {
-    ...packageJson,
-    main: './index.js',
-    types: './index.d.ts',
-    exports: {
-      '.': {
-        import: './index.js',
-        types: './index.d.ts',
-      },
-    },
-    devDependencies: {},
-    scripts: {},
+    "name": packageJson.name,
+    "version": packageJson.version,
+    "description": packageJson.description,
+    "license": packageJson.license,
+    "homepage": packageJson.homepage,
+    "bugs": packageJson.bugs,
+    "keywords": packageJson.keywords,
+    "type": packageJson.type,
+    "peerDependencies": packageJson.peerDependencies
   };
+
+  distPackageJson
 
   // 3. Write the new package.json to the 'dist' directory
   writeFileSync(

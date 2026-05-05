@@ -1,5 +1,5 @@
 import { type Address } from "viem";
-import { mainnet, base, sepolia } from "viem/chains";
+import { mainnet, sepolia } from "viem/chains";
 
 export type C0Addresses = {
   c0: Address;
