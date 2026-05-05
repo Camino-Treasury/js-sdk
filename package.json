@@ -1,6 +1,6 @@
 {
-  "name": "camino-sdk",
-  "version": "1.0.0",
+  "name": "@camino-treasury/sdk",
+  "version": "1.1.0",
   "description": "TypeScript SDK for the C0 stablecoin and Camino Treasury smart contracts",
   "license": "MIT",
   "homepage": "https://github.com/camino-treasury/js-sdk#readme",
@@ -27,6 +27,14 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./data": {
+      "import": "./dist/data.js",
+      "types": "./dist/data.d.ts"
+    },
+    "./actions": {
+      "import": "./dist/actions.js",
+      "types": "./dist/actions.d.ts"
     }
   },
   "scripts": {

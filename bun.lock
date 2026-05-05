@@ -14,7 +14,7 @@
         "viem": "^2.48.8",
       },
       "peerDependencies": {
-        "@wagmi/core": ">=2",
+        "@wagmi/core": ">=3",
         "viem": ">=2",
       },
     },

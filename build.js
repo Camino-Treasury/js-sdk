@@ -2,7 +2,6 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { build } from 'esbuild';
 
-// Read package.json to get external dependencies
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
 
 const external = [
@@ -13,6 +12,8 @@ const external = [
 const buildOptions = {
   entryPoints: [
     'src/index.ts',
+    'src/data.ts',
+    'src/actions.ts',
   ],
   outdir: 'dist',
   bundle: true,
@@ -26,12 +27,11 @@ const buildOptions = {
   },
   tsconfig: './tsconfig.json',
 };
+
 try {
-  // 1. Run esbuild
   await build(buildOptions);
   console.log('✅ esbuild completed successfully.');
 
-  // 2. Create a clean package.json for the 'dist' directory
   const distPackageJson = {
     "name": packageJson.name,
     "version": packageJson.version,
@@ -41,12 +41,23 @@ try {
     "bugs": packageJson.bugs,
     "keywords": packageJson.keywords,
     "type": packageJson.type,
-    "peerDependencies": packageJson.peerDependencies
+    "peerDependencies": packageJson.peerDependencies,
+    "exports": {
+      ".": {
+        "import": "./index.js",
+        "types": "./index.d.ts"
+      },
+      "./data": {
+        "import": "./data.js",
+        "types": "./data.d.ts"
+      },
+      "./actions": {
+        "import": "./actions.js",
+        "types": "./actions.d.ts"
+      }
+    }
   };
 
-  distPackageJson
-
-  // 3. Write the new package.json to the 'dist' directory
   writeFileSync(
     './dist/package.json',
     JSON.stringify(distPackageJson, null, 2)

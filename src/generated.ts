@@ -20,83 +20,6 @@ export const c0Abi = [
   },
   {
     type: 'function',
-    inputs: [],
-    name: 'ASSET_CAP_MANAGER_ROLE',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'CANCEL_AUTHORIZATION_TYPEHASH',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'DEFAULT_ADMIN_ROLE',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'DOMAIN_SEPARATOR',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'FREEZE_MANAGER_ROLE',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'M_DECIMALS',
-    outputs: [{ name: '', internalType: 'uint8', type: 'uint8' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'PAUSER_ROLE',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'PERMIT_TYPEHASH',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'RECEIVE_WITH_AUTHORIZATION_TYPEHASH',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'TRANSFER_WITH_AUTHORIZATION_TYPEHASH',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'YIELD_RECIPIENT_MANAGER_ROLE',
-    outputs: [{ name: '', internalType: 'bytes32', type: 'bytes32' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
     inputs: [
       { name: 'account', internalType: 'address', type: 'address' },
       { name: 'spender', internalType: 'address', type: 'address' },
@@ -131,63 +54,10 @@ export const c0Abi = [
   },
   {
     type: 'function',
-    inputs: [{ name: 'asset', internalType: 'address', type: 'address' }],
-    name: 'assetDecimals',
-    outputs: [{ name: '', internalType: 'uint8', type: 'uint8' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'authorizer', internalType: 'address', type: 'address' },
-      { name: 'nonce', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'authorizationState',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
     inputs: [{ name: 'account', internalType: 'address', type: 'address' }],
     name: 'balanceOf',
     outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
     stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'authorizer_', internalType: 'address', type: 'address' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'r_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'vs_', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'cancelAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'authorizer_', internalType: 'address', type: 'address' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'v_', internalType: 'uint8', type: 'uint8' },
-      { name: 'r_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 's_', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'cancelAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'authorizer_', internalType: 'address', type: 'address' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'signature_', internalType: 'bytes', type: 'bytes' },
-    ],
-    name: 'cancelAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
   },
   {
     type: 'function',
@@ -216,21 +86,6 @@ export const c0Abi = [
     name: 'disableEarning',
     outputs: [],
     stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'eip712Domain',
-    outputs: [
-      { name: 'fields_', internalType: 'bytes1', type: 'bytes1' },
-      { name: 'name_', internalType: 'string', type: 'string' },
-      { name: 'version_', internalType: 'string', type: 'string' },
-      { name: 'chainId_', internalType: 'uint256', type: 'uint256' },
-      { name: 'verifyingContract_', internalType: 'address', type: 'address' },
-      { name: 'salt_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'extensions_', internalType: 'uint256[]', type: 'uint256[]' },
-    ],
-    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -284,79 +139,6 @@ export const c0Abi = [
   },
   {
     type: 'function',
-    inputs: [
-      { name: 'name', internalType: 'string', type: 'string' },
-      { name: 'symbol', internalType: 'string', type: 'string' },
-      { name: 'yieldRecipient_', internalType: 'address', type: 'address' },
-      { name: 'admin', internalType: 'address', type: 'address' },
-      { name: 'assetCapManager', internalType: 'address', type: 'address' },
-      { name: 'freezeManager', internalType: 'address', type: 'address' },
-      { name: 'pauser', internalType: 'address', type: 'address' },
-      {
-        name: 'yieldRecipientManager',
-        internalType: 'address',
-        type: 'address',
-      },
-    ],
-    name: 'initialize',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'name', internalType: 'string', type: 'string' },
-      { name: 'symbol', internalType: 'string', type: 'string' },
-      { name: 'yieldRecipient_', internalType: 'address', type: 'address' },
-      { name: 'admin', internalType: 'address', type: 'address' },
-      { name: 'freezeManager', internalType: 'address', type: 'address' },
-      {
-        name: 'yieldRecipientManager',
-        internalType: 'address',
-        type: 'address',
-      },
-      { name: 'pauser', internalType: 'address', type: 'address' },
-    ],
-    name: 'initialize',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [{ name: 'asset', internalType: 'address', type: 'address' }],
-    name: 'isAllowedAsset',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'asset', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'isAllowedToReplaceAssetWithM',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [{ name: 'amount', internalType: 'uint256', type: 'uint256' }],
-    name: 'isAllowedToUnwrap',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'asset', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'isAllowedToWrap',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
     inputs: [],
     name: 'isEarningEnabled',
     outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
@@ -372,22 +154,8 @@ export const c0Abi = [
   {
     type: 'function',
     inputs: [],
-    name: 'mToken',
-    outputs: [{ name: '', internalType: 'address', type: 'address' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
     name: 'name',
     outputs: [{ name: '', internalType: 'string', type: 'string' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [{ name: 'account', internalType: 'address', type: 'address' }],
-    name: 'nonces',
-    outputs: [{ name: '', internalType: 'uint256', type: 'uint256' }],
     stateMutability: 'view',
   },
   {
@@ -435,69 +203,10 @@ export const c0Abi = [
   {
     type: 'function',
     inputs: [
-      { name: 'from_', internalType: 'address', type: 'address' },
-      { name: 'to_', internalType: 'address', type: 'address' },
-      { name: 'value_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validAfter_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validBefore_', internalType: 'uint256', type: 'uint256' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'signature_', internalType: 'bytes', type: 'bytes' },
-    ],
-    name: 'receiveWithAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'from_', internalType: 'address', type: 'address' },
-      { name: 'to_', internalType: 'address', type: 'address' },
-      { name: 'value_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validAfter_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validBefore_', internalType: 'uint256', type: 'uint256' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'r_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'vs_', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'receiveWithAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'from_', internalType: 'address', type: 'address' },
-      { name: 'to_', internalType: 'address', type: 'address' },
-      { name: 'value_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validAfter_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validBefore_', internalType: 'uint256', type: 'uint256' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'v_', internalType: 'uint8', type: 'uint8' },
-      { name: 'r_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 's_', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'receiveWithAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
       { name: 'role', internalType: 'bytes32', type: 'bytes32' },
       { name: 'callerConfirmation', internalType: 'address', type: 'address' },
     ],
     name: 'renounceRole',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'asset', internalType: 'address', type: 'address' },
-      { name: 'recipient', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-    ],
-    name: 'replaceAssetWithM',
     outputs: [],
     stateMutability: 'nonpayable',
   },
@@ -527,20 +236,6 @@ export const c0Abi = [
     name: 'setYieldRecipient',
     outputs: [],
     stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [{ name: 'interfaceId', internalType: 'bytes4', type: 'bytes4' }],
-    name: 'supportsInterface',
-    outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-    stateMutability: 'view',
-  },
-  {
-    type: 'function',
-    inputs: [],
-    name: 'swapFacility',
-    outputs: [{ name: '', internalType: 'address', type: 'address' }],
-    stateMutability: 'view',
   },
   {
     type: 'function',
@@ -582,54 +277,6 @@ export const c0Abi = [
     ],
     name: 'transferFrom',
     outputs: [{ name: '', internalType: 'bool', type: 'bool' }],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'from_', internalType: 'address', type: 'address' },
-      { name: 'to_', internalType: 'address', type: 'address' },
-      { name: 'value_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validAfter_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validBefore_', internalType: 'uint256', type: 'uint256' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'r_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'vs_', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'transferWithAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'from_', internalType: 'address', type: 'address' },
-      { name: 'to_', internalType: 'address', type: 'address' },
-      { name: 'value_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validAfter_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validBefore_', internalType: 'uint256', type: 'uint256' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'signature_', internalType: 'bytes', type: 'bytes' },
-    ],
-    name: 'transferWithAuthorization',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'from_', internalType: 'address', type: 'address' },
-      { name: 'to_', internalType: 'address', type: 'address' },
-      { name: 'value_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validAfter_', internalType: 'uint256', type: 'uint256' },
-      { name: 'validBefore_', internalType: 'uint256', type: 'uint256' },
-      { name: 'nonce_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 'v_', internalType: 'uint8', type: 'uint8' },
-      { name: 'r_', internalType: 'bytes32', type: 'bytes32' },
-      { name: 's_', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'transferWithAuthorization',
-    outputs: [],
     stateMutability: 'nonpayable',
   },
   {
@@ -1473,127 +1120,12 @@ export const swapFacilityAbi = [
   {
     type: 'function',
     inputs: [
-      { name: 'asset', internalType: 'address', type: 'address' },
-      { name: 'extensionIn', internalType: 'address', type: 'address' },
-      { name: 'extensionOut', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-      { name: 'recipient', internalType: 'address', type: 'address' },
-      { name: 'deadline', internalType: 'uint256', type: 'uint256' },
-      { name: 'signature', internalType: 'bytes', type: 'bytes' },
-    ],
-    name: 'replaceAssetWithMWithPermit',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'asset', internalType: 'address', type: 'address' },
-      { name: 'extensionIn', internalType: 'address', type: 'address' },
-      { name: 'extensionOut', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-      { name: 'recipient', internalType: 'address', type: 'address' },
-      { name: 'deadline', internalType: 'uint256', type: 'uint256' },
-      { name: 'v', internalType: 'uint8', type: 'uint8' },
-      { name: 'r', internalType: 'bytes32', type: 'bytes32' },
-      { name: 's', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'replaceAssetWithMWithPermit',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'extension', internalType: 'address', type: 'address' },
-      { name: 'approved', internalType: 'bool', type: 'bool' },
-    ],
-    name: 'setAdminApprovedExtension',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'extension', internalType: 'address', type: 'address' },
-      { name: 'permissioned', internalType: 'bool', type: 'bool' },
-    ],
-    name: 'setPermissionedExtension',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'extension', internalType: 'address', type: 'address' },
-      { name: 'swapper', internalType: 'address', type: 'address' },
-      { name: 'allowed', internalType: 'bool', type: 'bool' },
-    ],
-    name: 'setPermissionedMSwapper',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
       { name: 'tokenIn', internalType: 'address', type: 'address' },
       { name: 'tokenOut', internalType: 'address', type: 'address' },
       { name: 'amount', internalType: 'uint256', type: 'uint256' },
       { name: 'recipient', internalType: 'address', type: 'address' },
     ],
     name: 'swap',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'extensionOut', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-      { name: 'recipient', internalType: 'address', type: 'address' },
-    ],
-    name: 'swapInM',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'extensionIn', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-      { name: 'recipient', internalType: 'address', type: 'address' },
-    ],
-    name: 'swapOutM',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'tokenIn', internalType: 'address', type: 'address' },
-      { name: 'tokenOut', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-      { name: 'recipient', internalType: 'address', type: 'address' },
-      { name: 'deadline', internalType: 'uint256', type: 'uint256' },
-      { name: 'v', internalType: 'uint8', type: 'uint8' },
-      { name: 'r', internalType: 'bytes32', type: 'bytes32' },
-      { name: 's', internalType: 'bytes32', type: 'bytes32' },
-    ],
-    name: 'swapWithPermit',
-    outputs: [],
-    stateMutability: 'nonpayable',
-  },
-  {
-    type: 'function',
-    inputs: [
-      { name: 'tokenIn', internalType: 'address', type: 'address' },
-      { name: 'tokenOut', internalType: 'address', type: 'address' },
-      { name: 'amount', internalType: 'uint256', type: 'uint256' },
-      { name: 'recipient', internalType: 'address', type: 'address' },
-      { name: 'deadline', internalType: 'uint256', type: 'uint256' },
-      { name: 'signature', internalType: 'bytes', type: 'bytes' },
-    ],
-    name: 'swapWithPermit',
     outputs: [],
     stateMutability: 'nonpayable',
   },
@@ -1832,96 +1364,6 @@ export const swapFacilityAbi = [
 export const readC0 = /*#__PURE__*/ createReadContract({ abi: c0Abi })
 
 /**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"ASSET_CAP_MANAGER_ROLE"`
- */
-export const readC0AssetCapManagerRole = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'ASSET_CAP_MANAGER_ROLE',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"CANCEL_AUTHORIZATION_TYPEHASH"`
- */
-export const readC0CancelAuthorizationTypehash =
-  /*#__PURE__*/ createReadContract({
-    abi: c0Abi,
-    functionName: 'CANCEL_AUTHORIZATION_TYPEHASH',
-  })
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"DEFAULT_ADMIN_ROLE"`
- */
-export const readC0DefaultAdminRole = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'DEFAULT_ADMIN_ROLE',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"DOMAIN_SEPARATOR"`
- */
-export const readC0DomainSeparator = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'DOMAIN_SEPARATOR',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"FREEZE_MANAGER_ROLE"`
- */
-export const readC0FreezeManagerRole = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'FREEZE_MANAGER_ROLE',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"M_DECIMALS"`
- */
-export const readC0MDecimals = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'M_DECIMALS',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"PAUSER_ROLE"`
- */
-export const readC0PauserRole = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'PAUSER_ROLE',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"PERMIT_TYPEHASH"`
- */
-export const readC0PermitTypehash = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'PERMIT_TYPEHASH',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"RECEIVE_WITH_AUTHORIZATION_TYPEHASH"`
- */
-export const readC0ReceiveWithAuthorizationTypehash =
-  /*#__PURE__*/ createReadContract({
-    abi: c0Abi,
-    functionName: 'RECEIVE_WITH_AUTHORIZATION_TYPEHASH',
-  })
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"TRANSFER_WITH_AUTHORIZATION_TYPEHASH"`
- */
-export const readC0TransferWithAuthorizationTypehash =
-  /*#__PURE__*/ createReadContract({
-    abi: c0Abi,
-    functionName: 'TRANSFER_WITH_AUTHORIZATION_TYPEHASH',
-  })
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"YIELD_RECIPIENT_MANAGER_ROLE"`
- */
-export const readC0YieldRecipientManagerRole = /*#__PURE__*/ createReadContract(
-  { abi: c0Abi, functionName: 'YIELD_RECIPIENT_MANAGER_ROLE' },
-)
-
-/**
  * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"allowance"`
  */
 export const readC0Allowance = /*#__PURE__*/ createReadContract({
@@ -1943,22 +1385,6 @@ export const readC0AssetBalanceOf = /*#__PURE__*/ createReadContract({
 export const readC0AssetCap = /*#__PURE__*/ createReadContract({
   abi: c0Abi,
   functionName: 'assetCap',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"assetDecimals"`
- */
-export const readC0AssetDecimals = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'assetDecimals',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"authorizationState"`
- */
-export const readC0AuthorizationState = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'authorizationState',
 })
 
 /**
@@ -1986,14 +1412,6 @@ export const readC0Decimals = /*#__PURE__*/ createReadContract({
 })
 
 /**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"eip712Domain"`
- */
-export const readC0Eip712Domain = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'eip712Domain',
-})
-
-/**
  * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"getRoleAdmin"`
  */
 export const readC0GetRoleAdmin = /*#__PURE__*/ createReadContract({
@@ -2007,39 +1425,6 @@ export const readC0GetRoleAdmin = /*#__PURE__*/ createReadContract({
 export const readC0HasRole = /*#__PURE__*/ createReadContract({
   abi: c0Abi,
   functionName: 'hasRole',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"isAllowedAsset"`
- */
-export const readC0IsAllowedAsset = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'isAllowedAsset',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"isAllowedToReplaceAssetWithM"`
- */
-export const readC0IsAllowedToReplaceAssetWithM =
-  /*#__PURE__*/ createReadContract({
-    abi: c0Abi,
-    functionName: 'isAllowedToReplaceAssetWithM',
-  })
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"isAllowedToUnwrap"`
- */
-export const readC0IsAllowedToUnwrap = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'isAllowedToUnwrap',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"isAllowedToWrap"`
- */
-export const readC0IsAllowedToWrap = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'isAllowedToWrap',
 })
 
 /**
@@ -2059,14 +1444,6 @@ export const readC0IsFrozen = /*#__PURE__*/ createReadContract({
 })
 
 /**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"mToken"`
- */
-export const readC0MToken = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'mToken',
-})
-
-/**
  * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"name"`
  */
 export const readC0Name = /*#__PURE__*/ createReadContract({
@@ -2075,35 +1452,11 @@ export const readC0Name = /*#__PURE__*/ createReadContract({
 })
 
 /**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"nonces"`
- */
-export const readC0Nonces = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'nonces',
-})
-
-/**
  * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"paused"`
  */
 export const readC0Paused = /*#__PURE__*/ createReadContract({
   abi: c0Abi,
   functionName: 'paused',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"supportsInterface"`
- */
-export const readC0SupportsInterface = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'supportsInterface',
-})
-
-/**
- * Wraps __{@link readContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"swapFacility"`
- */
-export const readC0SwapFacility = /*#__PURE__*/ createReadContract({
-  abi: c0Abi,
-  functionName: 'swapFacility',
 })
 
 /**
@@ -2160,14 +1513,6 @@ export const writeC0Approve = /*#__PURE__*/ createWriteContract({
 })
 
 /**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"cancelAuthorization"`
- */
-export const writeC0CancelAuthorization = /*#__PURE__*/ createWriteContract({
-  abi: c0Abi,
-  functionName: 'cancelAuthorization',
-})
-
-/**
  * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"claimYield"`
  */
 export const writeC0ClaimYield = /*#__PURE__*/ createWriteContract({
@@ -2216,14 +1561,6 @@ export const writeC0GrantRole = /*#__PURE__*/ createWriteContract({
 })
 
 /**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"initialize"`
- */
-export const writeC0Initialize = /*#__PURE__*/ createWriteContract({
-  abi: c0Abi,
-  functionName: 'initialize',
-})
-
-/**
  * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"pause"`
  */
 export const writeC0Pause = /*#__PURE__*/ createWriteContract({
@@ -2240,28 +1577,11 @@ export const writeC0Permit = /*#__PURE__*/ createWriteContract({
 })
 
 /**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"receiveWithAuthorization"`
- */
-export const writeC0ReceiveWithAuthorization =
-  /*#__PURE__*/ createWriteContract({
-    abi: c0Abi,
-    functionName: 'receiveWithAuthorization',
-  })
-
-/**
  * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"renounceRole"`
  */
 export const writeC0RenounceRole = /*#__PURE__*/ createWriteContract({
   abi: c0Abi,
   functionName: 'renounceRole',
-})
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"replaceAssetWithM"`
- */
-export const writeC0ReplaceAssetWithM = /*#__PURE__*/ createWriteContract({
-  abi: c0Abi,
-  functionName: 'replaceAssetWithM',
 })
 
 /**
@@ -2303,15 +1623,6 @@ export const writeC0TransferFrom = /*#__PURE__*/ createWriteContract({
   abi: c0Abi,
   functionName: 'transferFrom',
 })
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"transferWithAuthorization"`
- */
-export const writeC0TransferWithAuthorization =
-  /*#__PURE__*/ createWriteContract({
-    abi: c0Abi,
-    functionName: 'transferWithAuthorization',
-  })
 
 /**
  * Wraps __{@link writeContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"unfreeze"`
@@ -2367,15 +1678,6 @@ export const simulateC0Approve = /*#__PURE__*/ createSimulateContract({
 })
 
 /**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"cancelAuthorization"`
- */
-export const simulateC0CancelAuthorization =
-  /*#__PURE__*/ createSimulateContract({
-    abi: c0Abi,
-    functionName: 'cancelAuthorization',
-  })
-
-/**
  * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"claimYield"`
  */
 export const simulateC0ClaimYield = /*#__PURE__*/ createSimulateContract({
@@ -2424,14 +1726,6 @@ export const simulateC0GrantRole = /*#__PURE__*/ createSimulateContract({
 })
 
 /**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"initialize"`
- */
-export const simulateC0Initialize = /*#__PURE__*/ createSimulateContract({
-  abi: c0Abi,
-  functionName: 'initialize',
-})
-
-/**
  * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"pause"`
  */
 export const simulateC0Pause = /*#__PURE__*/ createSimulateContract({
@@ -2448,28 +1742,12 @@ export const simulateC0Permit = /*#__PURE__*/ createSimulateContract({
 })
 
 /**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"receiveWithAuthorization"`
- */
-export const simulateC0ReceiveWithAuthorization =
-  /*#__PURE__*/ createSimulateContract({
-    abi: c0Abi,
-    functionName: 'receiveWithAuthorization',
-  })
-
-/**
  * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"renounceRole"`
  */
 export const simulateC0RenounceRole = /*#__PURE__*/ createSimulateContract({
   abi: c0Abi,
   functionName: 'renounceRole',
 })
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"replaceAssetWithM"`
- */
-export const simulateC0ReplaceAssetWithM = /*#__PURE__*/ createSimulateContract(
-  { abi: c0Abi, functionName: 'replaceAssetWithM' },
-)
 
 /**
  * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"revokeRole"`
@@ -2509,15 +1787,6 @@ export const simulateC0TransferFrom = /*#__PURE__*/ createSimulateContract({
   abi: c0Abi,
   functionName: 'transferFrom',
 })
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"transferWithAuthorization"`
- */
-export const simulateC0TransferWithAuthorization =
-  /*#__PURE__*/ createSimulateContract({
-    abi: c0Abi,
-    functionName: 'transferWithAuthorization',
-  })
 
 /**
  * Wraps __{@link simulateContract}__ with `abi` set to __{@link c0Abi}__ and `functionName` set to `"unfreeze"`
@@ -2984,73 +2253,12 @@ export const writeSwapFacilityReplaceAssetWithM =
   })
 
 /**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"replaceAssetWithMWithPermit"`
- */
-export const writeSwapFacilityReplaceAssetWithMWithPermit =
-  /*#__PURE__*/ createWriteContract({
-    abi: swapFacilityAbi,
-    functionName: 'replaceAssetWithMWithPermit',
-  })
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"setAdminApprovedExtension"`
- */
-export const writeSwapFacilitySetAdminApprovedExtension =
-  /*#__PURE__*/ createWriteContract({
-    abi: swapFacilityAbi,
-    functionName: 'setAdminApprovedExtension',
-  })
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"setPermissionedExtension"`
- */
-export const writeSwapFacilitySetPermissionedExtension =
-  /*#__PURE__*/ createWriteContract({
-    abi: swapFacilityAbi,
-    functionName: 'setPermissionedExtension',
-  })
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"setPermissionedMSwapper"`
- */
-export const writeSwapFacilitySetPermissionedMSwapper =
-  /*#__PURE__*/ createWriteContract({
-    abi: swapFacilityAbi,
-    functionName: 'setPermissionedMSwapper',
-  })
-
-/**
  * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swap"`
  */
 export const writeSwapFacilitySwap = /*#__PURE__*/ createWriteContract({
   abi: swapFacilityAbi,
   functionName: 'swap',
 })
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swapInM"`
- */
-export const writeSwapFacilitySwapInM = /*#__PURE__*/ createWriteContract({
-  abi: swapFacilityAbi,
-  functionName: 'swapInM',
-})
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swapOutM"`
- */
-export const writeSwapFacilitySwapOutM = /*#__PURE__*/ createWriteContract({
-  abi: swapFacilityAbi,
-  functionName: 'swapOutM',
-})
-
-/**
- * Wraps __{@link writeContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swapWithPermit"`
- */
-export const writeSwapFacilitySwapWithPermit =
-  /*#__PURE__*/ createWriteContract({
-    abi: swapFacilityAbi,
-    functionName: 'swapWithPermit',
-  })
 
 /**
  * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__
@@ -3069,73 +2277,12 @@ export const simulateSwapFacilityReplaceAssetWithM =
   })
 
 /**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"replaceAssetWithMWithPermit"`
- */
-export const simulateSwapFacilityReplaceAssetWithMWithPermit =
-  /*#__PURE__*/ createSimulateContract({
-    abi: swapFacilityAbi,
-    functionName: 'replaceAssetWithMWithPermit',
-  })
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"setAdminApprovedExtension"`
- */
-export const simulateSwapFacilitySetAdminApprovedExtension =
-  /*#__PURE__*/ createSimulateContract({
-    abi: swapFacilityAbi,
-    functionName: 'setAdminApprovedExtension',
-  })
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"setPermissionedExtension"`
- */
-export const simulateSwapFacilitySetPermissionedExtension =
-  /*#__PURE__*/ createSimulateContract({
-    abi: swapFacilityAbi,
-    functionName: 'setPermissionedExtension',
-  })
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"setPermissionedMSwapper"`
- */
-export const simulateSwapFacilitySetPermissionedMSwapper =
-  /*#__PURE__*/ createSimulateContract({
-    abi: swapFacilityAbi,
-    functionName: 'setPermissionedMSwapper',
-  })
-
-/**
  * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swap"`
  */
 export const simulateSwapFacilitySwap = /*#__PURE__*/ createSimulateContract({
   abi: swapFacilityAbi,
   functionName: 'swap',
 })
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swapInM"`
- */
-export const simulateSwapFacilitySwapInM = /*#__PURE__*/ createSimulateContract(
-  { abi: swapFacilityAbi, functionName: 'swapInM' },
-)
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swapOutM"`
- */
-export const simulateSwapFacilitySwapOutM =
-  /*#__PURE__*/ createSimulateContract({
-    abi: swapFacilityAbi,
-    functionName: 'swapOutM',
-  })
-
-/**
- * Wraps __{@link simulateContract}__ with `abi` set to __{@link swapFacilityAbi}__ and `functionName` set to `"swapWithPermit"`
- */
-export const simulateSwapFacilitySwapWithPermit =
-  /*#__PURE__*/ createSimulateContract({
-    abi: swapFacilityAbi,
-    functionName: 'swapWithPermit',
-  })
 
 /**
  * Wraps __{@link watchContractEvent}__ with `abi` set to __{@link swapFacilityAbi}__
